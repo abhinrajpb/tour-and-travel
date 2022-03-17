@@ -108,12 +108,25 @@ button:focus{
                       font-weight: 500;
                       color: $primary;
                       padding: 10px 0;
+                      position: relative;
                       &.chat{
                           color: #fff;
                           background: #ff8901;
                           border-radius: 100px;
                           padding: 10px 15px;
                           display: inline-block;
+                      }
+                      &:before{
+                          content: '';
+                          position: absolute;
+                          width: 0;
+                          height: 2px;
+                          bottom: 0;
+                          background: #1dc089;
+                          @include transition();
+                      }
+                      &:hover:before{
+                          width: 100%;
                       }
                   }
               }

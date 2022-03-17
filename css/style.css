@@ -88,6 +88,7 @@ button:focus {
   font-weight: 500;
   color: #2b2945;
   padding: 10px 0;
+  position: relative;
 }
 
 .header .header_wrap .navbar .navbar-nav .nav-item .nav-link.chat {
@@ -96,6 +97,23 @@ button:focus {
   border-radius: 100px;
   padding: 10px 15px;
   display: inline-block;
+}
+
+.header .header_wrap .navbar .navbar-nav .nav-item .nav-link:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  background: #1dc089;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.header .header_wrap .navbar .navbar-nav .nav-item .nav-link:hover:before {
+  width: 100%;
 }
 
 .about {
