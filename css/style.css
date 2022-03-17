@@ -99,6 +99,10 @@ button:focus {
   display: inline-block;
 }
 
+.header .header_wrap .navbar .navbar-nav .nav-item .nav-link.chat:before {
+  display: none;
+}
+
 .header .header_wrap .navbar .navbar-nav .nav-item .nav-link:before {
   content: '';
   position: absolute;

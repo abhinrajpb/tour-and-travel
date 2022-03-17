@@ -115,6 +115,9 @@ button:focus{
                           border-radius: 100px;
                           padding: 10px 15px;
                           display: inline-block;
+                          &:before{
+                              display: none;
+                          }
                       }
                       &:before{
                           content: '';
